@@ -16,70 +16,66 @@ This document presents the design and conceptualization process of **TEND**, a m
 
 ---
 
-## Project Introduction
-### Context and Justification
+
+# TEND The Mental Health Assistant – Project  
 TEND emerges as a response to the need for digital tools to manage mental health, offering a safe space for tracking emotional states, daily habits, and personal reflections.
+This project compiles the work carried out for the design of the *Mental Health Assistant* application, an app focused on supporting users in managing their emotional well-being and facilitating connections with certified professionals.  
 
-### Project Objectives
-- Design an intuitive mobile application for emotional tracking.  
-- Implement a recommendation system based on behavioral patterns.  
-- Facilitate connections with certified mental health professionals.  
-- Ensure privacy and security of sensitive data.  
+The consolidated document presents, step by step, how the idea evolved — from identifying the problems to be solved to the object-oriented design proposal.  
 
----
+## Folder Contents  
+- **documentacion.pdf** → LaTeX document integrating the four main sections of the project.  
+- **README.md** → This explanatory file, describing the purpose and structure of the document, as well as the process followed.  
 
-## Development Methodology
-The project was organized into four main phases:
+## Development Process  
 
-### Phase 1: Requirements Analysis
-- **Functional:** 8 categories, from user registration to communication with professionals.  
-- **Non-Functional:** security, usability, and performance (e.g., response time under 2 seconds).  
+The project was developed in four main phases, each corresponding to a section:  
 
-### Phase 2: User Stories
-Six stories were developed, including: secure registration, personalized reminders, personal diary, emotion tracking, communication with professionals, and experience personalization. Each story included verifiable acceptance criteria.  
+### 1. Requirements  
+The project began with defining requirements, separated into two types:  
 
-### Phase 3: User Interface Design
-Mockups were created for:  
-- Authentication screen (login/registration).  
-- Main interface with calendar and emotion color coding.  
-- Modules for emotion, sleep, and nutrition tracking.  
-- Analysis panel with trends and recommendations.  
+- **Functional Requirements (FRs):** specify what the app must do. Main features include:  
+  - Secure sign-up and login.  
+  - Emotional calendar with daily color tracking.  
+  - Personal journal for reflections and gratitude notes.  
+  - Personalized reminders and notifications.  
+  - Graphical statistics and progress reports.  
+  - Recommended actions based on user data.  
+  - Communication with verified health centers, always under user consent.  
 
-### Phase 4: Object-Oriented Design
-Using CRC cards, the main classes were defined:  
-- **User:** authentication and profile management.  
-- **EmotionManager:** emotion tracking.  
-- **PersonalDiary:** diary entry management.  
-- **RecommendationEngine:** personalized suggestions.  
-- **StatisticsManager:** analysis and reports.  
-- **ProfessionalCommunication:** connection with specialists.  
+- **Non-Functional Requirements (NFRs):** ensure quality and reliability. Key aspects:  
+  - **Security and privacy:** encryption, secure authentication, sensitive data control.  
+  - **Usability:** intuitive, calming, and accessible interface.  
+  - **Availability and reliability:** stable system, 24/7 uptime, data backup.  
+  - **Cross-platform compatibility:** Android, iOS, and scalable to web.  
+  - **Performance:** response times under 2 seconds for registrations and queries.  
+  - **Ethics and trust:** no automated diagnoses; crisis-support mechanisms included.  
 
----
+### 2. User Stories  
+Based on the requirements, user stories were written to reflect real needs of:  
+- **Patients:** seeking support, motivation, and clarity in their habits.  
+- **Professionals:** needing access to prior summaries, saving time in first consultations, and reaching the right clients.  
 
-## System Architecture
-- **Applied Patterns:** MVC, Singleton, Observer.  
-- **Data Flow:** layered architecture (presentation, business logic, persistence).  
+Each story included acceptance criteria, ensuring that functionalities could be validated objectively.  
 
----
+### 3. Mockups  
+Visual prototypes were created to represent the user experience and showcase key screens, such as:  
+- User registration.  
+- Emotional calendar with color coding.  
+- Mood and habit tracking.  
+- Visualization of statistics and reports.  
 
-## Results and Deliverables
-- Functional and non-functional requirements document.  
-- User stories with acceptance criteria.  
-- Interface prototypes (mockups).  
-- CRC cards.  
-- Final project presentation.  
+These mockups helped validate the user flow and confirm alignment with identified needs.  
 
-**Project Innovations:**  
-- Color-coded emotional tracking system.  
-- Behavior-based recommendation engine.  
-- Ethical handling of sensitive data.  
-- Integration with certified professionals.  
+### 4. CRC Cards  
+Finally, CRC Cards (Class–Responsibility–Collaboration) were prepared to define:  
+- Main system classes (e.g., User, Journal, Statistics, Recommendations, HealthCenter).  
+- Their specific responsibilities and collaborators.  
 
----
+This step translated requirements into a preliminary object-oriented architecture, essential for future technical development.  
 
-## Conclusions and Future Work
-### Achievements
-- Comprehensive requirements analysis.  
-- Usability-centered interface.  
-- Scalable, object-oriented architecture.  
-- Ethical and security considerations.  
+## Document Objective  
+The purpose of this work is to consolidate in one file the key elements of the app’s design:  
+- Provide a complete overview of the system, from problem definition to the proposed technical solution.  
+- Serve as reference material for review, presentation, and future implementation.  
+- Demonstrate a structured process of software analysis and design, following best engineering practices.

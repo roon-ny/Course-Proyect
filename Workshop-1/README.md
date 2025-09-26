@@ -73,7 +73,26 @@ Finally, CRC Cards (Class–Responsibility–Collaboration) were prepared to def
 - Their specific responsibilities and collaborators.  
 
 This step translated requirements into a preliminary object-oriented architecture, essential for future technical development.  
+# System Architecture
 
+The architecture of TEND was designed following solid software engineering principles and established design patterns. The system adopts a layered architecture that clearly separates responsibilities among presentation, business logic, and data persistence. This separation facilitates maintenance, scalability, and the future evolution of the application.
+
+At the core of the system are eight main classes that encapsulate the essential functionality of the application:  
+
+- **User**: Manages all information related to user profiles, including authentication and personal preferences.  
+- **EmotionManager**: Handles the recording and tracking of emotional states, implementing logic for color coding and temporal analysis of emotional patterns.  
+- **PersonalJournal**: Manages journal entries, ensuring the privacy and security of sensitive data through encryption and access control mechanisms.  
+- **RecommendationEngine**: Encapsulates the intelligent recommendation system, analyzing the user’s historical data to generate personalized suggestions for activities and self-care practices.  
+- **StatisticsManager**: Processes collected data to generate reports and visualizations that help users understand their temporal progress.  
+- **ProfessionalCommunication**: Manages connections with mental health professionals, implementing protocols to ensure secure and ethical interactions.  
+
+Several design patterns were applied to optimize the system’s structure:  
+
+- **Model–View–Controller (MVC):** Organizes the separation between the user interface and business logic.  
+- **Singleton:** Used for configuration classes requiring a single global instance.  
+- **Observer:** Facilitates the implementation of the notification system, allowing different components to react to changes in the user’s state.  
+
+The data flow in TEND follows a coherent model where information moves from user interfaces to processing modules, then to storage systems, and finally back to the presentation layer as insights and recommendations. This flow is designed to minimize latency in critical operations while maintaining data integrity and security at all times.
 ## Document Objective  
 The purpose of this work is to consolidate in one file the key elements of the app’s design:  
 - Provide a complete overview of the system, from problem definition to the proposed technical solution.  
